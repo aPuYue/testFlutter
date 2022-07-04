@@ -49,7 +49,7 @@ class _MyPageState extends State<MyPage> {
           return Container(
             height: 50,
             color: Colors.amber[500],
-            child: Center(child: Text(hits[index]["user"])),
+            child: Center(child: Image.network(hits[index]["previewURL"])),
           );
         },
       ),
