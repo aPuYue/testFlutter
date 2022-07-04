@@ -42,13 +42,15 @@ class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+      body: ListView.builder(
+        padding: const EdgeInsets.all(8),
         itemCount: hits.length,
-        itemBuilder: (context, index) {
-          // return Text(index.toString());//collectionView
-          Map<String, dynamic> hit = hits[index];
-          return  Image.network(hit["previewURL"]);
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            height: 50,
+            color: Colors.amber[500],
+            child: Center(child: Text(hits[index]["user"])),
+          );
         },
       ),
     );
