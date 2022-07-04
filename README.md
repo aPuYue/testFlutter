@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+![截屏2022-07-04 19 50 33](https://user-images.githubusercontent.com/38312620/177140357-0d6b864f-eee2-4b9e-b52c-6f4372ce5930.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
